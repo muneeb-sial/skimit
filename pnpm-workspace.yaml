@@ -2,4 +2,4 @@ packages:
   - "packages/*"
   - "apps/*"
 allowBuilds:
-  unrs-resolver: set this to true or false
+  unrs-resolver: false
