@@ -1,0 +1,9 @@
+{
+  "name": "api",
+  "private": true,
+  "scripts": {
+    "dev": "python ./app.py",
+    "start": "python ./app.py",
+    "build": "uv sync --frozen"
+  }
+}
