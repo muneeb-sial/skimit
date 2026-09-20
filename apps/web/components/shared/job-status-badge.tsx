@@ -6,14 +6,14 @@ export function JobStatusBadge({
   job,
   className,
 }: {
-  job: Pick<Job, "status" | "progress">
+  job: Pick<Job, "status">
   className?: string
 }) {
   const { label, variant } = JOB_STATUS_META[job.status]
 
   return (
     <Badge variant={variant} className={className}>
-      {job.status === "uploading" ? `${label} ${job.progress}%` : label}
+      {label}
     </Badge>
   )
 }

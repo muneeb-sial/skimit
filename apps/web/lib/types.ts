@@ -1,6 +1,5 @@
 export type JobStatus =
   | "queued"
-  | "uploading"
   | "processing"
   | "completed"
   | "failed"
@@ -13,10 +12,9 @@ export interface Job {
   platform: string
   source: JobSource
   status: JobStatus
-  progress: number
   createdAt: string
   duration: string
-  summaryBullets: string[]
+  summary: string
   transcript: string
   pendingMessage: string
   pendingDetail: string

@@ -3,7 +3,6 @@ import { Clock } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
 import { Card } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
 import { JobActions } from "@/components/shared/job-actions"
 import { JobStatusBadge } from "@/components/shared/job-status-badge"
 import { formatJobDate } from "@/lib/jobs"
@@ -21,9 +20,6 @@ export function JobCard({ job }: { job: Job }) {
           {job.title}
         </Link>
       </h2>
-      {job.status === "uploading" && (
-        <Progress value={job.progress} aria-label="Upload progress" />
-      )}
       <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
         <Clock className="size-3.5" aria-hidden />
         <span>
